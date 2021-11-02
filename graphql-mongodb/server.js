@@ -1,7 +1,6 @@
 const { PubSub, GraphQLServer } = require("graphql-yoga");
 const mongoose = require("mongoose");
-const typeDefs = require("./typeDefs");
-const resolvers = require("./resolvers");
+const { typeDefs, resolvers } = require("./schemas");
 mongoose.connect("mongodb://localhost/miniChat", {
   useNewUrlParser: true,
   useFindAndModify: false,
